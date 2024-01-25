@@ -467,7 +467,7 @@ export default function buildFFT(curve, groupName) {
         const bits = log2(nPoints);
 
         if ((2 ** bits)*sIn != buff.byteLength) {
-            if (logger) logger.error("lagrangeEvaluations iinvalid input size");
+            if (logger) logger.error("lagrangeEvaluations invalid input size");
             throw new Error("lagrangeEvaluations invalid Input size");
         }
 
