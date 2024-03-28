@@ -4474,7 +4474,7 @@ async function buildThreadManager(wasm, singleThread) {
         }
 
         // Limit to 64 threads for memory reasons.
-        if (concurrency>64) concurrency=64;
+        //if (concurrency>64) concurrency=64;
         tm.concurrency = concurrency;
 
         for (let i = 0; i<concurrency; i++) {
